@@ -10,6 +10,17 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      'green': '#166534',
+      'light': '#f1f5f9'
+    },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['"Open Sans"'],
+    },
   },
   plugins: [],
 }
