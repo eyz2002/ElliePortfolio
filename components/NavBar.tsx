@@ -41,20 +41,19 @@ const NavBar = () => {
     const [navbar, setNavbar] = useState(false) // whether bar is mobile or desktop view and if menu should be open or not
     
     return (
-        <header className="w-full h-11 bg-green px-4 sm:px-20 fixed top-0 z-50 shadow dark:bg-stone-900 dark:border-b dark:border-stone-600">
-            <div className = "justify-between md:items-center md:flex">
-                <h2 className = "text-3xl text-light font-bold font-mono "> Ellie Zhang</h2> 
-                
-                <div className = "md:flex md:space-x-6 text-light font-medium">
-                    {NAV_ITEMS.map((item, idx) => {
-                        return <a key = {idx}>{item.label }</a>
-                    })}
-                </div>
-                
-            </div>
+        <header className="w-full h-20 bg-green px-4 sm:px-20 fixed top-0 z-50 shadow dark:bg-stone-900 dark:border-b dark:border-stone-600 flex">
+        <div className="flex justify-between items-center w-full">
+            <h2 className="text-3xl text-light font-bold font-mono">Ellie Zhang</h2>
+        </div>
 
-        </header>
-        
+        <div className="md:items-center md:flex flex items-center justify-between">
+            <div className="md:flex md:space-x-6 text-light font-medium">
+            {NAV_ITEMS.map((item, idx) => {
+                return <a key={idx}>{item.label}</a>;
+            })}
+            </div>
+        </div>
+        </header>   
     )
 }
 
