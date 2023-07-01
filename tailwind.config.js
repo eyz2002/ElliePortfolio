@@ -11,8 +11,9 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'green': '#166534',
-      'light': '#f1f5f9'
+      'black': '#000000',
+      'base-green': '#B9CABD',
+      'light-green': '#E6EEE8'
     },
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],

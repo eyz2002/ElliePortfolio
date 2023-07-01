@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar"
 import "./globals.css"
 
 import { ThemeProvider } from "next-themes"
+import { HeroSection } from "@/components/HeroSection"
 
 export default function RootLayout({
   children,
