@@ -47,7 +47,7 @@ const NavBar = () => {
         <div className="flex items-center w-full flex-row space-x-5">
             <div className="flex justify-left items-center"
             >
-                <Image src = "/CroppedHead.jpg" alt = "" width={75} height = {60}/>
+                <Image className = "rounded-full shadow" src = "/CroppedHead.jpg" alt = "" width={75} height = {60}/>
             </div>
             <h2 className="text-3xl text-black font-bold font-mono">EZ </h2>
         </div>
