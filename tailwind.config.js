@@ -1,3 +1,5 @@
+const animationDelay = require('tailwindcss-animation-delay');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,8 +13,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bounce: "bounce 0.8s alternate cubic-bezier(0.75, 0.05, 0.075, 0.035) ",
-        typing: "typing 3s steps(15) infinite",
+        bounce: "bounce 0.8s alternate cubic-bezier(0.75, 0.05, 0.075, 0.035) infinite",
+        typing: "typing 4s steps(14) infinite alternate",
         blinking: "blink 0.1s infinite"
       },
       keyframes: {
@@ -22,11 +24,19 @@ module.exports = {
         },
         typing: {
           from: { width: "0" },
-          to: { width: "11ch" }
+          to: { width: "10ch" }
         },
+
         blink: {
           from: { "border-right-color": "transparent" },
           to: { "border-right-color": "black" },
+        },
+        
+        animationDelay: {
+          100: "100ms",
+          200: "200ms",
+          300: "300ms",
+          400: "400ms",
         },
       },
     },
@@ -43,5 +53,11 @@ module.exports = {
       'body': ['"Open Sans"'],
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }
+
+/*
+
+*/

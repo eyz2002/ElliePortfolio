@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-
     "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "dependencies": {
@@ -15,12 +14,12 @@
     "@types/react-dom": "18.2.6",
     "next": "13.4.7",
     "next-themes": "^0.2.1",
-
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
     "sass": "^1.63.6",
+    "tailwindcss-animation-delay": "^1.0.7",
     "typescript": "5.1.6"
   },
   "devDependencies": {

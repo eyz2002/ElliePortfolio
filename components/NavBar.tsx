@@ -49,11 +49,11 @@ const NavBar = () => {
             >
                 <Image className = "rounded-full shadow" src = "/CroppedHead.jpg" alt = "" width={75} height = {60}/>
             </div>
-            <h2 className="text-3xl text-black font-bold font-mono">EZ </h2>
+            <h2 className="text-3xl text-black font-mono font-bold">Ellie Zhang</h2>
         </div>
 
         <div className=" md:flex flex items-center">
-            <div className="md:flex md:space-x-6 text-black font-medium">
+            <div className="md:flex md:space-x-6 text-lg text-black font-serif">
             {NAV_ITEMS.map((item, idx) => {
                 return <a key={idx}>{item.label}</a>;
             })}
