@@ -48,7 +48,7 @@ export const Projects = () => {
             {projects.map((project, idx) => {
                 return <div key={idx}>
                     <div className = "flex flex-col md:flex-row md:space-x-12"> 
-                    <div className="relative h-56 w-96 overflow-hidden rounded-lg object-cover ">
+                    <div className="relative sm:h-48 sm:w-80 md:h-56 md:w-96 overflow-hidden rounded-lg object-cover ">
                             <Image
                                 src = {project.image}
                                 alt = ""
@@ -61,7 +61,7 @@ export const Projects = () => {
                                 />
                         </div>
                         <div className="md:w-1/2">
-                            <h1 className = "text-2xl font-bold font-mono mb-2">{project.name}</h1>
+                            <h1 className = "md:text-2xl sm:text-xl font-bold font-mono mb-2">{project.name}</h1>
                             <p className = "text-md leading-7 mb-4 "> {project.description}</p>
                             {/* Can add links to github/demos here*/}
                         </div>

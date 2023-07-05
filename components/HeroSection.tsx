@@ -11,7 +11,7 @@ export const HeroSection = () => {
             <section id = "Bio" className = "flex flex-col text-center py-10 my-10 space-y-6">
                 <div className = "text-2xl font-serif italic"> Hi, my name is </div>
                 <div className="flex justify-center">
-                    <div className = "animation-delay-200 h-20 animate-typing animate-blinking overflow-hidden whitespace-nowrap font-mono text-7xl border-r-4"> Ellie Zhang</div>
+                    <div className = "animation-delay-200 h-20 animate-typing animate-blinking overflow-hidden whitespace-nowrap font-mono sm:text-5xl md:text-7xl border-r-4"> Ellie Zhang</div>
                 </div>
 
                 <p className= "md:text-sm lg:text-xl font-light">
@@ -21,7 +21,7 @@ export const HeroSection = () => {
 
             <section id = "Buttons" className = "flex space-x-20 justify-center"> 
               
-                <Link
+                {/* <Link
                     to = "projects"
                     className = "font-sans text-xl px-6 py-3 bg-base-green box shadow-md rounded-md"
                     activeClass = "active"
@@ -43,7 +43,7 @@ export const HeroSection = () => {
                     duration = {500}
                 >
                     Resume
-                </Link>              
+                </Link>               */}
             </section>
 
             <div id = "arrow" className = "flex justify-center">
