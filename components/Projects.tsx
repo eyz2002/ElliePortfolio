@@ -44,27 +44,27 @@ export const Projects = () => {
             <hr className="w-20 h-1 mx-auto my-4 bg-base-green border=0 rounded"></hr>
         </h1>
         
-        <div className = "flex flex-col space-y-28 my-10">
+        <div className = "flex flex-col space-y-24 md:space-y-28 my-10">
             {projects.map((project, idx) => {
                 return <div key={idx}>
-                    <div className = "flex flex-col md:flex-row md:space-x-12"> 
-                    <div className="relative sm:h-48 sm:w-80 md:h-56 md:w-96 overflow-hidden rounded-lg object-cover ">
-                            <Image
-                                src = {project.image}
-                                alt = ""
-                                fill = {true}
-                                className = "rounded-xl shadow-md box hover:opacity-70"
-                                sizes="
-                                (max-width: 768px) 100vw,
-                                (max-width: 1200px) 50vw,
-                                33vw"
-                                />
-                        </div>
-                        <div className="md:w-1/2">
-                            <h1 className = "md:text-2xl sm:text-xl font-bold font-mono mb-2">{project.name}</h1>
-                            <p className = "text-md leading-7 mb-4 "> {project.description}</p>
-                            {/* Can add links to github/demos here*/}
-                        </div>
+                        <div className = "flex flex-col md:flex-row md:space-x-12 space-y-3" > 
+                            <div className="relative h-56 w-96 overflow-hidden rounded-lg object-cover ">
+                                <Image
+                                    src = {project.image}
+                                    alt = ""
+                                    fill = {true}
+                                    className = "rounded-xl shadow-md box hover:opacity-70"
+                                    sizes="
+                                    (max-width: 768px) 100vw,
+                                    (max-width: 1200px) 50vw,
+                                    33vw"
+                                    />
+                            </div>
+                            <div className="md:w-1/2">
+                                <h1 className = "text-xl md:text-2xl font-bold font-mono mb-2">{project.name}</h1>
+                                <p className = "text-md leading-7 mb-4 "> {project.description}</p>
+                                {/* Can add links to github/demos here*/}
+                            </div>
                     </div>
 
                 </div>
