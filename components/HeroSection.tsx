@@ -11,7 +11,7 @@ export const HeroSection = () => {
             <section id = "Bio" className = "flex flex-col text-center py-10 my-10 space-y-6">
                 <div className = "text-xl md:text-2xl font-serif italic"> Hi, my name is </div>
                 <div className="flex justify-center">
-                    <div className = "h-18 md:h-20 animate-typing animate-blinking overflow-hidden whitespace-nowrap font-mono text-2xl md:text-7xl border-r-4"> Ellie Zhang   </div>
+                    <div className = "h-18 md:h-20 md:animate-typing md:animate-blinking overflow-hidden whitespace-nowrap font-mono text-2xl md:text-7xl border-r-4"> Ellie Zhang   </div>
                 </div>
 
                 <p className= "md:text-sm lg:text-xl font-light">
